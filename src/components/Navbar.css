@@ -1,0 +1,95 @@
+/* 1. Global Theme Definitions */
+body {
+  transition: background-color 0.4s ease, color 0.4s ease;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Dark Theme (Black Body) */
+/* body.dark-theme {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+} */
+
+/* Light Theme (White Body) */
+/* body.light-theme {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+} */
+
+/* 2. Navbar Styling */
+.bg-black { background-color: #000 !important; }
+.border-bottom-dark { border-bottom: 1px solid #222; }
+.border-bottom-light { border-bottom: 1px solid #eee; }
+
+/* 3. Stronghold Brand Styling */
+.brand-icon-container {
+  padding: 8px;
+  border: 2px solid;
+  border-radius: 4px;
+}
+.icon-dark { border-color: #fff; color: #fff; }
+.icon-light { border-color: #000; color: #000; }
+
+.brand-name {
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  font-family: 'Arial Black', sans-serif;
+}
+
+/* 4. Navigation Links */
+.custom-link {
+  color: inherit !important;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+.custom-link:hover { opacity: 1; }
+
+.active-underline {
+  opacity: 1 !important;
+  border-bottom: 2px solid currentColor;
+}
+
+/* 5. YELLOW REGISTER BUTTON */
+.btn-warning {
+  background-color: #ffc107 !important; /* Yellow */
+  color: #000 !important;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800 !important;
+  transform: translateY(-2px);
+}
+
+/* 6. Login Link */
+.login-btn {
+  font-weight: 600;
+  transition: opacity 0.3s;
+}
+.login-btn:hover { opacity: 0.7; }
+/* ============================= */
+/* Transparent Navbar */
+/* ============================= */
+
+.transparent-navbar {
+  background: rgba(0, 0, 0, 0.6); /* dark transparent */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: background 0.4s ease;
+}
+
+/* Light mode transparent */
+body.light-theme .transparent-navbar {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* Optional subtle bottom border */
+.transparent-navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.light-theme .transparent-navbar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}

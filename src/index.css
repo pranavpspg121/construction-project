@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+/* Smooth transition */
+.transition-navbar {
+  transition: all 0.4s ease;
+}
+
+/* Hover animation */
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffc107;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #ffc107 !important;
+}
+
+/* Active link */
+.active-link {
+  color: #ffc107 !important;
+  font-weight: bold;
+}
+
+/* Professional Logo */
+.logo-text {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+
+/* Smooth transition for entire website */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0;
+  padding: 0;
+}
+
+/* DARK THEME */
+body.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
+/* LIGHT THEME */
+body.light-theme {
+  background-color: #ffffff;
+  color: #000000;
+}
+body.dark-theme .bg-light,
+body.dark-theme .bg-white {
+  background-color: #1e1e1e !important;
+}
+body.dark-theme .card {
+  background-color: #1e1e1e !important;
+  color: #ffffff;
+  border-color: #333;
+}
+
+body.dark-theme .text-dark {
+  color: #ffffff !important;
+}
+
+/* ========================= */
+/* HERO SECTION */
+/* ========================= */
+.hero-section {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1503387762-592deb58ef4e");
+  background-size: cover;
+  background-position: center;
+}
+
+.border-bottom-dark {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.border-bottom-light {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.custom-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.custom-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffc107;
+  transition: width 0.3s ease;
+}
+
+.custom-link:hover::after {
+  width: 100%;
+}
+
+.active-underline::after {
+  width: 100%;
+}
+.hero-section {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1503387762-592deb58ef4e");
+  background-size: cover;
+  background-position: center;
+}
+/* Fix muted text in Dark Mode */
+body.dark-theme .text-muted {
+  color: #bbbbbb !important;
+}
+
