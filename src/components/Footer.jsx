@@ -1,51 +1,96 @@
+import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-light pt-5">
+    <footer className="footer-section pt-5 pb-4">
+
       <div className="container">
         <div className="row">
 
-          {/* Brand */}
+          {/* ===== CONTACT INFO ===== */}
           <div className="col-md-4 mb-4">
-            <h4 className="fw-bold">BuildPro</h4>
-            <p className="text-muted">
-              Building excellence, one project at a time. Your trusted partner in construction.
+            <h5 className="fw-bold mb-4">CONTACT US</h5>
+
+            <p>
+              <FaMapMarkerAlt className="text-warning me-2" />
+              Stronghold Construction<br />
+              Chevayur, Mavoor Road<br />
+              Calicut - 673017
             </p>
-          </div>
 
-          {/* Quick Links */}
-          <div className="col-md-4 mb-4">
-            <h5>Quick Links</h5>
-            <ul className="list-unstyled">
-              <li><Link to="/" className="text-decoration-none text-dark">Home</Link></li>
-              <li><Link to="/about" className="text-decoration-none text-dark">About</Link></li>
-              <li><Link to="/services" className="text-decoration-none text-dark">Services</Link></li>
-              <li><Link to="/contact" className="text-decoration-none text-dark">Contact</Link></li>
-              <li><Link to="/blog" className="text-decoration-none text-dark">Blog</Link></li>
-            </ul>
-          </div>
+            <p>
+              <FaEnvelope className="text-warning me-2" />
+              contact@strongholdcon.com
+            </p>
 
-          {/* Social */}
-          <div className="col-md-4 mb-4">
-            <h5>Connect With Us</h5>
-            <div className="d-flex gap-3 mt-3">
-              <FaFacebook size={22} />
-              <FaInstagram size={22} />
-              <FaLinkedin size={22} />
+            <p>
+              <FaPhoneAlt className="text-warning me-2" />
+              +91 9447019259
+            </p>
+
+            {/* Social Icons */}
+            <div className="d-flex gap-3 mt-4">
+              <div className="social-box"><FaFacebookF /></div>
+              <div className="social-box"><FaInstagram /></div>
+              <div className="social-box"><FaYoutube /></div>
+              <div className="social-box"><FaLinkedinIn /></div>
             </div>
           </div>
 
+          {/* ===== QUICK ACCESS ===== */}
+          <div className="col-md-4 mb-4">
+            <h5 className="fw-bold mb-4">QUICK ACCESS</h5>
+
+            <ul className="list-unstyled footer-links">
+              <li><Link to="/about">About</Link></li>
+              <li><Link to="/services">What We Do</Link></li>
+              <li><Link to="/projects">Our Projects</Link></li>
+              <li><Link to="/contact">Contact Us</Link></li>
+            </ul>
+          </div>
+
+          {/* ===== CONTACT FORM ===== */}
+          <div className="col-md-4">
+            <h5 className="fw-bold mb-4">GET IN TOUCH WITH US</h5>
+
+            <form>
+              <div className="mb-3">
+                <input type="text" placeholder="Name" className="form-control footer-input" />
+              </div>
+
+              <div className="mb-3">
+                <input type="text" placeholder="Phone" className="form-control footer-input" />
+              </div>
+
+              <div className="mb-3">
+                <input type="email" placeholder="Email" className="form-control footer-input" />
+              </div>
+
+              <div className="mb-3">
+                <textarea placeholder="Message" rows="3" className="form-control footer-input"></textarea>
+              </div>
+
+             <button type="submit" className="footer-btn">
+
+                SUBMIT NOW
+              </button>
+            </form>
+          </div>
+
         </div>
 
-        <div className="text-center py-3 border-top">
-          <small>© 2026 BuildPro. All rights reserved.</small>
+        <hr className="border-secondary mt-4" />
+
+        <div className="text-center">
+          <small>© 2026 Stronghold Construction. All Rights Reserved.</small>
         </div>
+
       </div>
     </footer>
   );
 };
 
 export default Footer;
+
 

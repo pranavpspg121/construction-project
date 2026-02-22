@@ -4,7 +4,7 @@ const WhyChoose = () => {
   return (
     <section className="py-5 bg-light">
       <div className="container text-center">
-        <h2 className="fw-bold mb-3">Why Choose BuildPro?</h2>
+        <h2 className="fw-bold mb-3">Why Choose STRONGHOLD?</h2>
         <p className="text-muted mb-5">
           We deliver excellence through commitment, expertise, and innovation.
         </p>
