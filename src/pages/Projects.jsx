@@ -1,16 +1,28 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+
 import ProjectCard from "../components/ProjectCard";
 import projectsData from "../data/projects.json";
+import { setProjects } from "../redux/projectSlice";
 
 const Projects = () => {
+
   const [selected, setSelected] = useState(null);
+
+  const dispatch = useDispatch();
+  const projects = useSelector((state) => state.projects);
+
+  useEffect(() => {
+    dispatch(setProjects(projectsData));
+  }, [dispatch]);
 
   return (
     <div className="container py-5">
+
       <h1 className="text-center mb-5">Our Projects</h1>
 
       <div className="row">
-        {projectsData.map((project) => (
+        {projects.map((project) => (
           <div className="col-lg-3 col-md-4 col-sm-6 mb-4" key={project.id}>
             <ProjectCard
               project={project}
@@ -36,6 +48,7 @@ const Projects = () => {
           </div>
         </div>
       )}
+
     </div>
   );
 };
