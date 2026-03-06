@@ -15,6 +15,9 @@ import Services from "./pages/Services";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Profile from "./pages/Profile";
+import Careers from "./pages/Careers";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -35,6 +38,9 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/careers" element={<Careers />} />
+        <Route path="/register" element={<Register />} />
+<Route path="/login" element={<Login />} />
       </Routes>
 
       <Footer />

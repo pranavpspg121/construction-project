@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "Modern Villa",
+    "image": "/projects/project01.jpg",
+    "client": "Private Client",
+    "type": "Residential",
+    "location": "Kozhikode",
+    "scope": "Full Construction",
+    "status": "Completed"
+  },
+  {
+    "id": 2,
+    "title": "ABC Commercial Building",
+    "image": "/projects/project2.png",
+    "client": "ABC Genesis",
+    "type": "Commercial",
+    "location": "Kunnamangalam",
+    "scope": "Real Estate Development",
+    "status": "Completed"
+  },
+  {
+    "id": 3,
+    "title": "Luxury Duplex House",
+    "image": "/projects/project3.png",
+    "client": "Mr. Rahman",
+    "type": "Residential",
+    "location": "Calicut",
+    "scope": "Design & Build",
+    "status": "Completed"
+  },
+  {
+    "id": 4,
+    "title": "Green Valley Apartments",
+    "image": "/projects/project4.png",
+    "client": "Green Developers",
+    "type": "Residential",
+    "location": "Malappuram",
+    "scope": "Apartment Construction",
+    "status": "Ongoing"
+  },
+  {
+    "id": 5,
+    "title": "City Mall Extension",
+    "image": "/projects/project5.jpg",
+    "client": "City Group",
+    "type": "Commercial",
+    "location": "Kochi",
+    "scope": "Structural Expansion",
+    "status": "Completed"
+  },
+  {
+    "id": 6,
+    "title": "Industrial Warehouse",
+    "image": "/projects/project6.jpg",
+    "client": "LogiCorp",
+    "type": "Industrial",
+    "location": "Kannur",
+    "scope": "Warehouse Construction",
+    "status": "Completed"
+  },
+  {
+    "id": 7,
+    "title": "Corporate Office Tower",
+    "image": "/projects/project7.png",
+    "client": "TechNova Pvt Ltd",
+    "type": "Commercial",
+    "location": "Bangalore",
+    "scope": "Office Development",
+    "status": "Ongoing"
+  },
+  {
+    "id": 8,
+    "title": "Premium Villa Project",
+    "image": "/projects/project8.png",
+    "client": "Elite Homes",
+    "type": "Residential",
+    "location": "Wayanad",
+    "scope": "Turnkey Construction",
+    "status": "Completed"
+  },
+  {
+    "id": 9,
+    "title": "School Campus Development",
+    "image": "/projects/project9.png",
+    "client": "Bright Future School",
+    "type": "Institutional",
+    "location": "Kasaragod",
+    "scope": "Campus Construction",
+    "status": "Completed"
+  },
+  {
+    "id": 10,
+    "title": "Hospital Block Construction",
+    "image": "/projects/project10.jpg",
+    "client": "CareWell Hospital",
+    "type": "Healthcare",
+    "location": "Thrissur",
+    "scope": "Medical Facility Development",
+    "status": "Ongoing"
+  },
+  {
+    "id": 11,
+    "title": "Luxury Beach House",
+    "image": "/projects/project11.jpg",
+    "client": "Private Client",
+    "type": "Residential",
+    "location": "Goa",
+    "scope": "Architectural Design & Build",
+    "status": "Completed"
+  },
+  {
+    "id": 12,
+    "title": "IT Park Building",
+    "image": "/projects/project12.png",
+    "client": "Infotech Solutions",
+    "type": "Commercial",
+    "location": "Hyderabad",
+    "scope": "IT Infrastructure Development",
+    "status": "Ongoing"
+  }
+]

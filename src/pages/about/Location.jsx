@@ -37,12 +37,12 @@ const Location = () => {
 
               <p>
                 Chevayur, Mavoor Road<br />
-                Calicut - 673017<br />
+                Calicut - 673019<br />
                 Kerala, India
               </p>
 
               <p>
-                <strong>Phone:</strong> +91 9447019259
+                <strong>Phone:</strong> +91 9744551129
               </p>
 
               <p>
